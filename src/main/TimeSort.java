@@ -1,6 +1,5 @@
 package main;
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Event;
 import java.awt.Font;
@@ -35,11 +34,9 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.List;
-
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
-import javax.swing.JColorChooser;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -51,10 +48,8 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.xml.parsers.DocumentBuilderFactory;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import element.tree.undoRedo.UndoRedoListener;
 import menu.Botao;
 import menu.Menu;
@@ -95,7 +90,7 @@ public class TimeSort{
 			this.fonte=fonte;
 			tree.setFonte(fonte);
 		}
-	private Object[]entLimOpcoes={"Restrito",50,100,200,300,500,1000,"Sem restrição"};
+//	private Object[]entLimOpcoes={"Restrito",50,100,200,300,500,1000,"Sem restrição"};
 	private Object[]doLimOpcoes={"Desativado",50,100,200,300,500,1000,"Sem restrição"};
 	private String ini="configMindSort.ini";
 	private Painel painel;
@@ -522,11 +517,11 @@ public class TimeSort{
 			}
 		});
 	}};
-	private void setCorFundo(Color cor){
-//		Cor.setCorFundo(cor);
-		janelaTexto.setBackground(cor);
-		painel.setBackground(cor);
-	}
+//	private void setCorFundo(Color cor){
+////		Cor.setCorFundo(cor);
+//		janelaTexto.setBackground(cor);
+//		painel.setBackground(cor);
+//	}
 	private Rectangle window=new Rectangle(janela.getBounds());
 	private boolean mousePressed=false;
 	private Janela janelaTexto=new Janela(janela){{
